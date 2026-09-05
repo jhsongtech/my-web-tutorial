@@ -15,3 +15,17 @@ body {
 
   transform: translateY(-100px);
 }
+
+#todo-container form {
+  display: flex;
+  gap: 20px;
+}
+
+#todo-container form input {
+  flex: 1;
+  padding: 5px;
+}
+
+#todo-container form button {
+  padding: 5px;
+}
