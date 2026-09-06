@@ -38,3 +38,7 @@ body {
 .todo-delete {
   margin-left: auto;
 }
+
+input:checked + label {
+  text-decoration: line-through;
+}
