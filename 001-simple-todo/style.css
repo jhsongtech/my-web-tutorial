@@ -29,3 +29,12 @@ body {
 #todo-container form button {
   padding: 5px;
 }
+
+.todo-item {
+  display: flex;
+  align-items: center;
+}
+
+.todo-delete {
+  margin-left: auto;
+}
