@@ -1,0 +1,22 @@
+button {
+  background-color: blue;
+  color: white;
+  width: 100px;
+  height: 100px;
+  padding: 25px;
+
+  border: 1px solid black;
+}
+
+#todoInput {
+  margin-right: 20px;
+}
+
+#todoContainer {
+  display: flex;
+  align-items: center;
+}
+
+button:hover {
+  background-color: red;
+}
