@@ -1,13 +1,13 @@
-const title = document.querySelector("#title");
-console.log(title);
+const input = document.querySelector("#todoInput");
+const btn = document.querySelector("#btn");
+const output = document.querySelector("#msg");
 
-title.textContent = "지훈의 할 일 목록";
-
-const button = document.querySelector("#btn");
-button.textContent = "추가";
-
-let clicks = 0;
-button.addEventListener("click", () => {
-  clicks++;
-  title.textContent = `지훈의 할 일 목록 (${clicks})`;
+btn.addEventListener("click", () => {
+  const todoText = input.value.trim();
+  if (todoText === "") {
+    output.textContent = "할 일을 입력하세요"; // 입력창에 적힌 글자
+  } else {
+    output.textContent = `추가됨: ${todoText}`;
+  }
+  input.value = "";
 });
