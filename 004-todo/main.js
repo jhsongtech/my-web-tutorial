@@ -17,11 +17,12 @@ const msg = document.querySelector("#msg");
 
 btn.addEventListener("click", () => {
   const li = document.createElement("li"); // ① 만들기: <li></li>
-  li.textContent = input.value; // ② 내용 채우기: <li>공부</li>
-  if (li.textContent.trim() === "") {
+  const todoInput = input.value.trim();
+  if (todoInput === "") {
     msg.textContent = "할 일을 입력하세요";
     return;
   }
+  li.textContent = todoInput; // ② 내용 채우기: <li>공부</li>
   input.value = "";
   list.append(li); // ③ 붙이기: <ul> 안의 맨 끝에 추가
   msg.textContent = "";
