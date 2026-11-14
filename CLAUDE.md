@@ -25,14 +25,18 @@
 - 완료: 변수·자료형, 조건문, 반복문, 함수(화살표·콜백), 배열·객체, map·filter·find·reduce,
   ES6(구조분해·스프레드·?.·??), DOM 요소 찾기·textContent, 이벤트(addEventListener),
   폼 값(value, trim, 빈 값 검사), 요소 만들고 붙이기(createElement → textContent → append),
-  요소 지우기(remove, 콜백 안에 콜백, 클로저 맛보기), append vs innerHTML(XSS)
-- **다음 할 것: JSON + 비동기 기초(fetch, async/await)** → 끝나면 JS 마무리, Java로 넘어감
+  요소 지우기(remove, 콜백 안에 콜백, 클로저 맛보기), append vs innerHTML(XSS),
+  JSON(parse/stringify, 받은 JSON 배열을 forEach로 목록 출력 — 005-json)
+- **다음 할 것: 비동기 기초(fetch, async/await)** — 005-json의 response 문자열을 fetch로 받아 오게 바꾸기
+  → 끝나면 JS 마무리, Java로 넘어감
 - 나중에 할 것: 삭제 버튼 웹 접근성(aria-label) — 접근성 배울 때 004-todo에 적용
 - 아직 헷갈려하는 부분: 콜백 매개변수에 무엇이 들어오는지, map/filter 체이닝 순서
 
 ## 가르치는 방식 (꼭 지킬 것)
 - 한 번에 **개념 하나 + 짧은 과제 하나**. 길게 몰아서 설명하지 않는다.
 - 과제를 막혀 하면 **정답 대신 힌트만** 준다. "힌트만"이라고 하면 코드 정답을 쓰지 않는다.
+- 단, **함수 이름·문법은 바로 알려 준다** ("예전 코드 참고하라"고 돌리지 않기). 흐름·로직(무엇을 어떤 순서로)은 힌트로.
+- 학습 세션을 시작할 때 **지난 내용 5분 복습**: OX·객관식 2~3문제를 먼저 낸다. (간격이 벌어지면 문법을 잘 잊음)
 - 결과값을 맞히는 계산·예측 문제는 내지 않는다. 실제 앱에서 쓰는 모양의 코드를 짜는 과제 위주로.
 - 개념 확인 퀴즈는 객관식(1~4번) 또는 OX로, 채팅에 텍스트로 낸다.
 - 처음부터 예쁘게 짜려다 막히는 경향이 있다 → "일단 동작하게, 그다음 다듬기"를 안내한다.
@@ -41,5 +45,5 @@
 - 메뉴 경로는 그 앱의 실제 UI 언어로 안내한다 (VS Code는 영어 메뉴).
 
 ## 저장소 규칙
-- 폴더/파일명: 두 자리 번호 + 소문자 kebab-case (예: 07-array-methods.js)
+- 폴더/파일명: 세 자리 번호 + 소문자 kebab-case (예: 005-json, 007-array-methods.js)
 - 커밋 메시지: `feat:` / `fix:` / `refactor:` / `docs:` / `style:` 접두어 + 한국어 설명
