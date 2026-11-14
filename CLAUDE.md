@@ -23,18 +23,21 @@
 
 ## Java 진도
 - Java는 오래전에 해서 거의 잊은 상태 → **처음 배우는 사람 기준**으로 진행한다.
-- **다음 할 것: 개발 환경 확인** (JDK 17 이상 설치 여부, 전자정부 5.1 기준) → 첫 Java 파일 실행
+- 개발 환경: JDK 21(Temurin) 설치됨. IDE는 **전자정부 개발환경 이클립스**(`C:\eGovFrameDev-5.0.2-Windows-64bit`, workspace-egov)를 쓴다.
+  프로젝트는 workspace가 아니라 이 저장소의 `java/` 아래에 만든다 (New Java Project에서 Use default location 해제, module-info 해제).
+- 전자정부 버전: 설치본은 5.0.2. 5.1은 베타로 보이나 미확인 → 8단계 전에 포털(다운로드 → 개발환경)에서 정식 버전 확인.
+- **다음 할 것: 이클립스에서 java/001-java-basics 프로젝트 만들기** → 첫 Java 파일 실행
 
 ## JS 진도 (완료)
 - 완료: 변수·자료형, 조건문, 반복문, 함수(화살표·콜백), 배열·객체, map·filter·find·reduce,
   ES6(구조분해·스프레드·?.·??), DOM 요소 찾기·textContent, 이벤트(addEventListener),
   폼 값(value, trim, 빈 값 검사), 요소 만들고 붙이기(createElement → textContent → append),
   요소 지우기(remove, 콜백 안에 콜백, 클로저 맛보기), append vs innerHTML(XSS),
-  JSON(parse/stringify, 받은 JSON 배열을 forEach로 목록 출력 — 005-json),
+  JSON(parse/stringify, 받은 JSON 배열을 forEach로 목록 출력 — js/005-json),
   fetch + async/await(boards.json 받아 오기, Promise 개념, await 빠뜨리면 Promise가 들어옴, .then 방식도 읽기만),
   에러 처리(try/catch, res.ok·res.status 확인, throw new Error — fetch는 404에도 에러를 안 던짐)
 - 실행 주의: fetch 쓰는 페이지는 Live Server로 열어야 함 (file://은 CORS 에러)
-- 나중에 할 것: 삭제 버튼 웹 접근성(aria-label) — 접근성 배울 때 004-todo에 적용
+- 나중에 할 것: 삭제 버튼 웹 접근성(aria-label) — 접근성 배울 때 js/004-todo에 적용
 - 아직 헷갈려하는 부분: 콜백 매개변수에 무엇이 들어오는지, map/filter 체이닝 순서
 
 ## 가르치는 방식 (꼭 지킬 것)
@@ -50,5 +53,7 @@
 - 메뉴 경로는 그 앱의 실제 UI 언어로 안내한다 (VS Code는 영어 메뉴).
 
 ## 저장소 규칙
-- 폴더/파일명: 세 자리 번호 + 소문자 kebab-case (예: 005-json, 007-array-methods.js)
+- 언어별 폴더(`js/`, `java/` …) 아래에 둔다. 번호는 언어 폴더마다 001부터.
+- 폴더/파일명: 세 자리 번호 + 소문자 kebab-case (예: js/005-json, java/001-java-basics)
+  단, Java 클래스 파일은 Java 규칙(대문자 시작 CamelCase, 숫자 시작·하이픈 불가)을 따른다.
 - 커밋 메시지: `feat:` / `fix:` / `refactor:` / `docs:` / `style:` 접두어 + 한국어 설명
