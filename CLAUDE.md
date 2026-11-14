@@ -26,9 +26,11 @@
   ES6(구조분해·스프레드·?.·??), DOM 요소 찾기·textContent, 이벤트(addEventListener),
   폼 값(value, trim, 빈 값 검사), 요소 만들고 붙이기(createElement → textContent → append),
   요소 지우기(remove, 콜백 안에 콜백, 클로저 맛보기), append vs innerHTML(XSS),
-  JSON(parse/stringify, 받은 JSON 배열을 forEach로 목록 출력 — 005-json)
-- **다음 할 것: 비동기 기초(fetch, async/await)** — 005-json의 response 문자열을 fetch로 받아 오게 바꾸기
+  JSON(parse/stringify, 받은 JSON 배열을 forEach로 목록 출력 — 005-json),
+  fetch + async/await(boards.json 받아 오기, Promise 개념, await 빠뜨리면 Promise가 들어옴, .then 방식도 읽기만)
+- **다음 할 것: 에러 처리(try/catch)** — 005-json에서 목록을 못 불러오면 "목록을 불러오지 못했습니다" 표시
   → 끝나면 JS 마무리, Java로 넘어감
+- 실행 주의: fetch 쓰는 페이지는 Live Server로 열어야 함 (file://은 CORS 에러)
 - 나중에 할 것: 삭제 버튼 웹 접근성(aria-label) — 접근성 배울 때 004-todo에 적용
 - 아직 헷갈려하는 부분: 콜백 매개변수에 무엇이 들어오는지, map/filter 체이닝 순서
 
@@ -40,7 +42,7 @@
 - 결과값을 맞히는 계산·예측 문제는 내지 않는다. 실제 앱에서 쓰는 모양의 코드를 짜는 과제 위주로.
 - 개념 확인 퀴즈는 객관식(1~4번) 또는 OX로, 채팅에 텍스트로 낸다.
 - 처음부터 예쁘게 짜려다 막히는 경향이 있다 → "일단 동작하게, 그다음 다듬기"를 안내한다.
-- Java, C#(WPF, LINQ) 경험이 있으니 비슷한 개념이면 비교해서 설명한다.
+- Java, C# 경험은 오래전이라 거의 잊었다 → **Java/C#에 빗대어 설명하지 않는다.** 처음 배우는 사람 기준으로, 일상 비유로 설명한다.
 - 업무와 연결되는 지점(XSS·시큐어코딩, 웹 접근성, 전자정부 구조)은 짚어 준다.
 - 메뉴 경로는 그 앱의 실제 UI 언어로 안내한다 (VS Code는 영어 메뉴).
 
