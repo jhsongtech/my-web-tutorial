@@ -26,7 +26,10 @@
 - 개발 환경: JDK 21(Temurin) 설치됨. IDE는 **전자정부 개발환경 이클립스**(`C:\eGovFrameDev-5.0.2-Windows-64bit`, workspace-egov)를 쓴다.
   프로젝트는 workspace가 아니라 이 저장소의 `java/` 아래에 만든다 (New Java Project에서 Use default location 해제, module-info 해제).
 - 전자정부 버전: 설치본은 5.0.2. 5.1은 베타로 보이나 미확인 → 8단계 전에 포털(다운로드 → 개발환경)에서 정식 버전 확인.
-- **다음 할 것: 이클립스에서 java/001-java-basics 프로젝트 만들기** → 첫 Java 파일 실행
+- 완료: 이클립스 프로젝트 생성(java/001-java-basics), 클래스·main 기본 틀, System.out.println,
+  `;` 필수·큰따옴표 문자열·클래스명=파일명 규칙 (src/basics/Hello.java)
+- **다음 할 것: 변수와 자료형** (int, double, boolean, String — JS의 let/const와 달리 타입을 적는다)
+- 참고: workspace의 다른 프로젝트(egovboard) XML 검증 에러가 Problems 창에 보이는데 학습과 무관
 
 ## JS 진도 (완료)
 - 완료: 변수·자료형, 조건문, 반복문, 함수(화살표·콜백), 배열·객체, map·filter·find·reduce,

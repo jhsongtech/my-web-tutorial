@@ -34,9 +34,11 @@
 | [004-todo](js/004-todo/) | 할 일 추가·삭제 (createElement, append, remove) |
 | [005-json](js/005-json/) | JSON 게시판 목록을 fetch로 불러와 출력하고 실패 시 안내 문구 표시 |
 
-### java/
+### [java/](java/)
 
-Java 기초 실습 (예정)
+| 폴더 | 내용 |
+|---|---|
+| [001-java-basics](java/001-java-basics/) | Java 기초 문법 (클래스와 main, 출력) |
 
 ## 실행 방법
 
