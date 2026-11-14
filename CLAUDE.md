@@ -6,8 +6,8 @@
 ## 학습 목표 (테크트리)
 업무 스택에 맞춘 순서로 진행한다. 목표 스택: JSP + 전자정부 표준프레임워크 + WAS JEUS + Oracle(TOAD).
 
-1. JS 마무리 (업무에 필요한 부분만) ← 현재
-2. Java 감 되살리기 (클래스·인터페이스, 컬렉션, 예외, 제네릭)
+1. JS 마무리 (업무에 필요한 부분만) ✅ 완료
+2. Java 감 되살리기 (클래스·인터페이스, 컬렉션, 예외, 제네릭) ← 현재
 3. 웹 기초 + 서블릿/JSP (HTTP, 세션, forward/redirect, EL·JSTL)
 4. Oracle SQL + JDBC
 5. Spring 핵심 (DI/IoC, XML 설정, AOP, 트랜잭션)
@@ -21,15 +21,18 @@
 - 전자정부는 5.1 기준으로 공부하고, 기존 시스템(3.x/4.x)과의 차이(JDK 8 vs 17+, javax vs jakarta)는 나올 때마다 짚는다.
 - MERN(Node, Express, React, MongoDB)은 보류.
 
-## JS 진도
+## Java 진도
+- Java는 오래전에 해서 거의 잊은 상태 → **처음 배우는 사람 기준**으로 진행한다.
+- **다음 할 것: 개발 환경 확인** (JDK 17 이상 설치 여부, 전자정부 5.1 기준) → 첫 Java 파일 실행
+
+## JS 진도 (완료)
 - 완료: 변수·자료형, 조건문, 반복문, 함수(화살표·콜백), 배열·객체, map·filter·find·reduce,
   ES6(구조분해·스프레드·?.·??), DOM 요소 찾기·textContent, 이벤트(addEventListener),
   폼 값(value, trim, 빈 값 검사), 요소 만들고 붙이기(createElement → textContent → append),
   요소 지우기(remove, 콜백 안에 콜백, 클로저 맛보기), append vs innerHTML(XSS),
   JSON(parse/stringify, 받은 JSON 배열을 forEach로 목록 출력 — 005-json),
-  fetch + async/await(boards.json 받아 오기, Promise 개념, await 빠뜨리면 Promise가 들어옴, .then 방식도 읽기만)
-- **다음 할 것: 에러 처리(try/catch)** — 005-json에서 목록을 못 불러오면 "목록을 불러오지 못했습니다" 표시
-  → 끝나면 JS 마무리, Java로 넘어감
+  fetch + async/await(boards.json 받아 오기, Promise 개념, await 빠뜨리면 Promise가 들어옴, .then 방식도 읽기만),
+  에러 처리(try/catch, res.ok·res.status 확인, throw new Error — fetch는 404에도 에러를 안 던짐)
 - 실행 주의: fetch 쓰는 페이지는 Live Server로 열어야 함 (file://은 CORS 에러)
 - 나중에 할 것: 삭제 버튼 웹 접근성(aria-label) — 접근성 배울 때 004-todo에 적용
 - 아직 헷갈려하는 부분: 콜백 매개변수에 무엇이 들어오는지, map/filter 체이닝 순서
