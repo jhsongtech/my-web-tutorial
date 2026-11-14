@@ -28,7 +28,12 @@
 - 전자정부 버전: 설치본은 5.0.2. 5.1은 베타로 보이나 미확인 → 8단계 전에 포털(다운로드 → 개발환경)에서 정식 버전 확인.
 - 완료: 이클립스 프로젝트 생성(java/001-java-basics), 클래스·main 기본 틀, System.out.println,
   `;` 필수·큰따옴표 문자열·클래스명=파일명 규칙 (src/basics/Hello.java)
-- **다음 할 것: 변수와 자료형** (int, double, boolean, String — JS의 let/const와 달리 타입을 적는다)
+- **진행 방식: 학부 수준 기초(자료형·연산자·조건·반복·메서드·배열)는 건너뛰지 않되 빠르게 공부한다.**
+  JS와 다른 점 위주로 2~3개 개념을 묶어 짧게 설명 + 과제·퀴즈·복습은 그대로 한다. 더 많은 시간은 전자정부에 필요한 부분
+  (클래스·객체, VO/getter·setter, 인터페이스-구현체(Service/ServiceImpl), 컬렉션(List·Map), 예외, 제네릭)에 쓴다.
+- 기초 문법 1편(변수·자료형, 문자열 equals/trim/isEmpty/length()/substring, 조건·반복) 설명 완료.
+- **다음 할 것: 1편 과제 `TitleFormatter`** (src/basics) — 빈 제목이면 "제목 없음", 10자 초과면 앞 10자+"...",
+  조회수 100 이상이면 앞에 "[인기] ". 이어서 2편(메서드·배열).
 - 참고: workspace의 다른 프로젝트(egovboard) XML 검증 에러가 Problems 창에 보이는데 학습과 무관
 
 ## JS 진도 (완료)
