@@ -34,7 +34,10 @@
 - 완료: 기초 문법 1편 — 변수·자료형, 문자열 equals/trim/isEmpty/length()/substring, if·else if
   (과제 TitleFormatter: 빈 제목·10자 자르기·[인기] 표시). 헷갈렸던 점: substring(10) vs substring(0, 10),
   trim()은 원본을 안 바꾸고 새 문자열을 돌려줌(다시 대입 필요).
-- **다음 할 것: 기초 문법 2편 (메서드·배열)** — 1편 TitleFormatter 로직을 메서드로 빼고, 배열로 글 여러 개 처리
+- 완료: 기초 문법 2편 — 메서드(반환 타입·매개변수 타입·return·void), 배열(선언·new String[n]·length 괄호 없음·고정 크기),
+  for 반복, int↔String(String.valueOf, Integer.parseInt). TitleFormatter를 formatTitle 메서드 + 배열 반복으로 리팩토링.
+- 보류한 다듬기: formatTitle이 조회수까지 붙임 → 제목만 가공하도록 분리. VO 배울 때 다시 다룬다.
+- **다음 할 것: 클래스와 객체 (게시글 BoardVO 만들기)** — 제목·조회수를 따로 놀던 두 배열 대신 객체 하나로 묶기
 - 참고: workspace의 다른 프로젝트(egovboard) XML 검증 에러가 Problems 창에 보이는데 학습과 무관
 
 ## JS 진도 (완료)
