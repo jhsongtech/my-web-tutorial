@@ -40,8 +40,10 @@
 - 완료: 클래스와 객체 첫 단계 — 클래스=양식/객체=채운 한 장, 필드, new, 점(.)으로 읽고 쓰기,
   접근제어자 4종 개요(public·protected·default·private). BoardVO(필드 3개) + BoardMain(객체 하나 만들어 출력).
   변수명은 소문자 시작(클래스명과 같게 짓지 않기).
-- **다음 할 것: private 필드 + getter/setter** — BoardVO 필드를 private으로 막고 getTitle()/setTitle()로 접근.
-  이어서 생성자, 그다음 BoardVO 배열로 여러 글 + TitleFormatter 로직 합치기(보류한 다듬기 포함)
+- 완료: VO 의미(Value Object = 데이터 담는 그릇, MVC의 M 일부이자 계층 사이를 오가는 객체, DTO와 섞어 씀),
+  private 필드 + getter/setter(get/set + 필드명 대문자 시작, this.필드 = 매개변수). BoardVO·BoardMain에 적용.
+  헷갈렸던 점: setter에서 `title = this.title`로 대입 방향을 거꾸로 씀 → 오른쪽 값이 왼쪽으로 들어감.
+- **다음 할 것: 생성자** — BoardVO에 생성자 추가. 그다음 BoardVO 배열로 여러 글 + TitleFormatter 로직 합치기(보류한 다듬기 포함)
 - 참고: workspace의 다른 프로젝트(egovboard) XML 검증 에러가 Problems 창에 보이는데 학습과 무관
 
 ## JS 진도 (완료)
