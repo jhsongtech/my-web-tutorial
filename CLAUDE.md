@@ -4,19 +4,19 @@
 강의는 보지 않고 Claude와 대화로만 공부한다.
 
 ## 학습 목표 (테크트리)
-업무 스택에 맞춘 순서로 진행한다. 목표 스택: JSP + 전자정부 표준프레임워크 + WAS JEUS + Oracle(TOAD).
+업무 스택에 맞춘 순서로 진행한다. 목표 스택: JSP + 전자정부 표준프레임워크 + 웹서버 WebtoB + WAS JEUS + Oracle(TOAD).
 
 1. JS 마무리 (업무에 필요한 부분만) ✅ 완료
 2. Java 감 되살리기 (클래스·인터페이스, 컬렉션, 예외, 제네릭) ← 현재
-3. 웹 기초 + 서블릿/JSP (HTTP, 세션, forward/redirect, EL·JSTL)
+3. 웹 기초 + 서블릿/JSP (HTTP, 세션, forward/redirect, EL·JSTL, 웹서버 vs WAS 개념)
 4. Oracle SQL + JDBC
 5. Spring 핵심 (DI/IoC, XML 설정, AOP, 트랜잭션)
 6. Spring MVC
 7. MyBatis
 8. 전자정부 표준프레임워크 **5.1** (계층 구조, 게시판 CRUD + 페이징, 공통컴포넌트)
 9. JSP 화면 + jQuery + AJAX
-10. Maven, WAR 패키징, JEUS 배포, 로그
-11. 기존 소스 읽기, 디버깅, 시큐어코딩
+10. Maven, WAR 패키징, JEUS 배포, WebtoB 연동(정적 파일·JEUS로 요청 넘기기), 로그
+11. 기존 소스 읽기, 디버깅, 시큐어코딩, 제니퍼(APM) 화면 읽기(느린 요청·느린 SQL·에러 찾기)
 
 - 전자정부는 5.1 기준으로 공부하고, 기존 시스템(3.x/4.x)과의 차이(JDK 8 vs 17+, javax vs jakarta)는 나올 때마다 짚는다.
 - MERN(Node, Express, React, MongoDB)은 보류.
@@ -43,7 +43,9 @@
 - 완료: VO 의미(Value Object = 데이터 담는 그릇, MVC의 M 일부이자 계층 사이를 오가는 객체, DTO와 섞어 씀),
   private 필드 + getter/setter(get/set + 필드명 대문자 시작, this.필드 = 매개변수). BoardVO·BoardMain에 적용.
   헷갈렸던 점: setter에서 `title = this.title`로 대입 방향을 거꾸로 씀 → 오른쪽 값이 왼쪽으로 들어감.
-- **다음 할 것: 생성자** — BoardVO에 생성자 추가. 그다음 BoardVO 배열로 여러 글 + TitleFormatter 로직 합치기(보류한 다듬기 포함)
+- **다음 할 것: 생성자** — 설명을 채팅에 한 번 띄웠지만 **사용자가 아직 안 읽음 → 다음 세션에 설명부터 다시**.
+  내용: 이름=클래스명, 반환 타입 없음, new 때 자동 실행, 직접 쓰면 기본 생성자 사라짐 → VO엔 빈 생성자 필수.
+  과제: BoardVO에 3개 받는 생성자 + 빈 생성자, BoardMain에서 post2 생성·출력. 그다음 BoardVO 배열로 여러 글 + TitleFormatter 로직 합치기(보류한 다듬기 포함)
 - 참고: workspace의 다른 프로젝트(egovboard) XML 검증 에러가 Problems 창에 보이는데 학습과 무관
 
 ## JS 진도 (완료)
