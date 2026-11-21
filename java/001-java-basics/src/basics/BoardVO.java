@@ -5,6 +5,16 @@ public class BoardVO {
 	private String writer;
 	private int views;
 	
+	public BoardVO() {
+		
+	}
+	
+	public BoardVO(String title, String writer, int views) {
+		this.title = title;
+		this.writer = writer;
+		this.views = views;
+	}
+	
 	public String getTitle() {
 		return title;
 	}
