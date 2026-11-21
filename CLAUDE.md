@@ -43,9 +43,11 @@
 - 완료: VO 의미(Value Object = 데이터 담는 그릇, MVC의 M 일부이자 계층 사이를 오가는 객체, DTO와 섞어 씀),
   private 필드 + getter/setter(get/set + 필드명 대문자 시작, this.필드 = 매개변수). BoardVO·BoardMain에 적용.
   헷갈렸던 점: setter에서 `title = this.title`로 대입 방향을 거꾸로 씀 → 오른쪽 값이 왼쪽으로 들어감.
-- **다음 할 것: 생성자** — 설명을 채팅에 한 번 띄웠지만 **사용자가 아직 안 읽음 → 다음 세션에 설명부터 다시**.
-  내용: 이름=클래스명, 반환 타입 없음, new 때 자동 실행, 직접 쓰면 기본 생성자 사라짐 → VO엔 빈 생성자 필수.
-  과제: BoardVO에 3개 받는 생성자 + 빈 생성자, BoardMain에서 post2 생성·출력. 그다음 BoardVO 배열로 여러 글 + TitleFormatter 로직 합치기(보류한 다듬기 포함)
+- 완료: 생성자 — 이름=클래스명, 반환 타입 없음, new 때 자동 실행, 직접 쓰면 기본 생성자 사라짐(The constructor ... is undefined)
+  → VO엔 빈 생성자 필수(Spring·MyBatis가 빈 생성자 + setter로 채움). 전자정부 VO는 보통 생성자를 직접 안 씀.
+  BoardVO에 빈 생성자 + 3개 받는 생성자, BoardMain에서 post(생성자 방식)·post2(빈 생성자+setter 방식) 비교.
+  궁금해했던 점: 생성자가 있으면 getter/setter는 필요 없나? → 생성자는 처음 한 번, getter/setter는 이후 꺼내기·바꾸기.
+- **다음 할 것: BoardVO 배열로 여러 글 + TitleFormatter 로직 합치기**(보류한 다듬기: formatTitle은 제목만 가공) 그다음 BoardVO 배열로 여러 글 + TitleFormatter 로직 합치기(보류한 다듬기 포함)
 - 참고: workspace의 다른 프로젝트(egovboard) XML 검증 에러가 Problems 창에 보이는데 학습과 무관
 
 ## JS 진도 (완료)
