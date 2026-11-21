@@ -37,7 +37,11 @@
 - 완료: 기초 문법 2편 — 메서드(반환 타입·매개변수 타입·return·void), 배열(선언·new String[n]·length 괄호 없음·고정 크기),
   for 반복, int↔String(String.valueOf, Integer.parseInt). TitleFormatter를 formatTitle 메서드 + 배열 반복으로 리팩토링.
 - 보류한 다듬기: formatTitle이 조회수까지 붙임 → 제목만 가공하도록 분리. VO 배울 때 다시 다룬다.
-- **다음 할 것: 클래스와 객체 (게시글 BoardVO 만들기)** — 제목·조회수를 따로 놀던 두 배열 대신 객체 하나로 묶기
+- 완료: 클래스와 객체 첫 단계 — 클래스=양식/객체=채운 한 장, 필드, new, 점(.)으로 읽고 쓰기,
+  접근제어자 4종 개요(public·protected·default·private). BoardVO(필드 3개) + BoardMain(객체 하나 만들어 출력).
+  변수명은 소문자 시작(클래스명과 같게 짓지 않기).
+- **다음 할 것: private 필드 + getter/setter** — BoardVO 필드를 private으로 막고 getTitle()/setTitle()로 접근.
+  이어서 생성자, 그다음 BoardVO 배열로 여러 글 + TitleFormatter 로직 합치기(보류한 다듬기 포함)
 - 참고: workspace의 다른 프로젝트(egovboard) XML 검증 에러가 Problems 창에 보이는데 학습과 무관
 
 ## JS 진도 (완료)
